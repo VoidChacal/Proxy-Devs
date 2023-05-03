@@ -48,7 +48,14 @@ function showInput(source){
         document.getElementById('integrante7').classList.remove('hidden')
     }
     if(opcaoTexto == "Basquete"){
-        
+        document.getElementById('drop1').classList.remove('hidden')
+        document.getElementById('integrante6').classList.add('hidden')
+        document.getElementById('integrante7').classList.add('hidden')
+    }
+    if(opcaoTexto == "Tênis de Mesa"){
+        document.getElementById('drop1').classList.remove('hidden')
+        document.getElementById('integrante6').classList.add('hidden')
+        document.getElementById('integrante7').classList.add('hidden')
     }
 }
 

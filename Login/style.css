@@ -69,10 +69,10 @@ body{
 	gap: 0.5rem;
 }
 
-.drop {
+.parte1 {
 	display: flex;
 	width: 100%;
-	height: 90vh;
+	height: 53vh;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
@@ -99,6 +99,7 @@ label {
 	font-size: 13px;
 	color: #fff;
 	margin-bottom:0.2rem;
+	display: flex;
 }
 
 #data {
@@ -225,4 +226,7 @@ label {
 
 .hidden{
 	display: none;
+}
+.Membro1{
+	margin-left: 4vw;
 }
