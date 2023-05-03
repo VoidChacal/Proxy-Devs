@@ -1,0 +1,228 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial;
+	color: #fff;
+}
+
+
+body{
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-image: linear-gradient(to left, #2b5876,  #4e4376);
+}
+
+
+.campo, #confirmar {
+	width: 18rem;
+	height: 1.5rem;
+	border-radius: 9px;
+	padding: 8px 8px 8px 8px;
+	outline: none;
+	border: 0.1px solid rgb(128, 128, 221);
+	color: #e2e2e2;
+	background-color: transparent;
+
+}
+
+#confirmar {
+	padding: 0;
+	cursor: pointer;
+	display: block;
+}
+
+.opc, #equipes {
+	width: 15rem;
+	height: 1.5rem;
+	border-radius: 9px;
+	padding: 2px;
+	outline: none;
+	border: 0.1px solid #aaa;
+	color: #e2e2e2;
+	background-color: transparent;
+}
+
+#equipes {
+	width: 10rem;
+	margin-right: 2rem;
+}
+
+.baixo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: .3rem
+}
+
+
+.escolha {
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: space-evenly;
+	height: 10vh;
+	padding-top: 1rem;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+}
+
+.drop {
+	display: flex;
+	width: 100%;
+	height: 90vh;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 0.3rem;
+
+}
+
+#datainput {
+	width: 8rem;
+	margin-right: 7rem;
+}
+
+input#enviar {
+	width: 6rem;
+	padding: 0;
+
+}
+
+h1 {
+	font-size: 30px;
+}
+
+label {
+	font-size: 13px;
+	color: #fff;
+	margin-bottom:0.2rem;
+}
+
+#data {
+	margin-right: 7.5rem; 
+}
+
+
+#local {
+	margin-right: 7.4rem;
+}
+
+#nome {
+	margin-right: 12rem;
+}
+
+#peso {
+	margin-right: 8.8rem;
+}
+
+#aluguel {
+	margin-right: 7.9rem;
+}
+
+#empresa {
+	margin-right: 6.5rem;
+}
+
+#taxa {
+	margin-right: 5rem;
+}
+
+/* .rodape {
+	width: 100%;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+} */
+
+@media  (max-width: 980px) {
+	
+	/* vou comentar pra me organizar fds */
+
+	/* inputs maiores */
+
+
+
+	.campo {
+		width: 70%;
+		height: 3.8rem;
+		border-radius: 9px;
+		padding: 1rem;
+		font-size: 30px;
+	}
+
+
+	/* labels hehe */
+
+	label {
+		font-size: 28px;
+		margin-bottom: 0.5rem;
+	}
+
+	#data {
+		margin-right: 28rem; 
+	}
+	#local {
+		margin-right: 27.5rem;
+	}
+	#nome {
+		margin-right: 38rem;
+	}
+	
+	#peso {
+		margin-right: 30rem;
+	}
+	
+	#aluguel {
+		margin-right: 28.2rem;
+	}
+	
+	#empresa {
+		margin-right: 25.5rem;
+	}
+	
+	#taxa {
+		margin-right: 22.5rem;
+	}
+
+	input#datainput {
+		width: 15rem;
+		margin-right: 28rem;
+		text-align: center;
+		font-size: 25px;
+	}
+
+
+	form {
+		padding-top: 22vh;
+	}
+
+		
+	input#enviar {
+		margin-left: 28rem;
+		margin-top: -4rem;
+		width: 15rem;
+		height: 4rem;
+		
+		font-size: 25px;
+	}
+
+	/* .rodape {
+		margin-top: 28em;
+	} */
+
+	h1 {
+	font-size: 20px;
+	margin-bottom: 1rem;
+	}
+
+
+}
+
+.hidden{
+	display: none;
+}
