@@ -2,67 +2,91 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: Arial;
 	color: #fff;
+	font-family: 'Barlow Condensed', sans-serif;
 }
 
-a {
-    color: #fff;
-    text-decoration: none;
-    transition: 0.3s;
-  }
-  
-  a:hover {
-    opacity: 0.7;
-  }
-  
-  .logo {
-    font-size: 24px;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-  }
-  
-  nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-    background: #23232e;
-    height: 8vh;
-    width: 100vw;
-  }
-  .nav-list {
-    list-style: none;
-    display: flex;
-  }
-  
-  .nav-list li {
-    letter-spacing: 3px;
-    margin-left: 32px;
-  }
-  .logo{
-    width: 8vw;
-    height: 11vh;
-    position: absolute;
-    left: 50vh;
-  }
+/* roxo pastel: #8763C8 */
+/* cinza escuro: #868080 */
+/* cinza claro: #A49F9F */
+
 
 body{
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: fixed;
-	background-image: linear-gradient(to left, #2b5876,  #4e4376);
+	background-image: linear-gradient(to left, #8763C8,  #4e4376);
 }
 
+.menu {
+	width: 100%;
+	height: 6vh;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	}
+	
+	#nav-menu {
+	  height: 6vh;
+	  width: 100%;
+	  background-color:#23232e;
+	}
+	
+	ul {
+	  width: 70%;
+	  display: flex;
+	  justify-content: space-evenly;
+	  align-items: center;
+	  list-style: none;
+	  
+	  
+	}
+	ul li {
+	  font-size: 20px;
+	  color: #fff;
+	  cursor: pointer;
+	}
+	.menu #nav-menu ul li {
+	  list-style: none;
+	  transition: all 0.7s ease;
+	  cursor: pointer;
+	}
+	
+	ul li:hover {
+	  border-bottom: 1px solid #A49F9F;
+	}
+	
+	#logo {
+	  width: 4rem;
+	  margin-top: 1rem;
+	  margin-bottom: 1rem;
+	  cursor: pointer;
+	}
+	
+	
+	ul li:hover {
+		border-bottom: 0.2px solid #7143c5;
+	}
+	
 
+	.Senha{
+		width: 8rem;
+		height: 1.5rem;
+		border-radius: 9px;
+		padding: 8px 8px 8px 8px;
+		outline: none;
+		border: 0.1px solid #A49F9F;
+		color: #e2e2e2;
+		background-color: transparent;
+	}
 .campo, #confirmar {
 	width: 18rem;
 	height: 1.5rem;
 	border-radius: 9px;
 	padding: 8px 8px 8px 8px;
 	outline: none;
-	border: 0.1px solid rgb(128, 128, 221);
+	border: 0.1px solid #A49F9F;
 	color: #e2e2e2;
 	background-color: transparent;
 
@@ -94,7 +118,8 @@ body{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin-top: .3rem
+	flex-direction: row;
+	margin-top: 9vh;
 }
 
 
@@ -104,11 +129,21 @@ body{
 	align-items: center;
 	justify-content: space-evenly;
 	height: 10vh;
-	padding-top: 1rem;
+	/* padding-top: 1rem; */
 	flex-wrap: wrap;
 	gap: 0.5rem;
+	border: 3px solid;
 }
-
+.painel{
+	width: 30vw;
+	height: 60vh;
+	margin-top: 4vh;
+	display: flex;
+	align-items: center;
+	border: 3px solid;
+	margin-left: 40vw;
+	flex-direction: column;
+}
 .parte1 {
 	display: flex;
 	width: 100%;
@@ -117,7 +152,6 @@ body{
 	justify-content: center;
 	flex-direction: column;
 	gap: 0.3rem;
-
 }
 
 #datainput {
@@ -128,7 +162,7 @@ body{
 input#enviar {
 	width: 6rem;
 	padding: 0;
-
+	height: 2.5rem;
 }
 
 h1 {
@@ -142,34 +176,8 @@ label {
 	display: flex;
 }
 
-#data {
-	margin-right: 7.5rem; 
-}
 
 
-#local {
-	margin-right: 7.4rem;
-}
-
-#nome {
-	margin-right: 12rem;
-}
-
-#peso {
-	margin-right: 8.8rem;
-}
-
-#aluguel {
-	margin-right: 7.9rem;
-}
-
-#empresa {
-	margin-right: 6.5rem;
-}
-
-#taxa {
-	margin-right: 5rem;
-}
 
 /* .rodape {
 	width: 100%;
@@ -204,32 +212,6 @@ label {
 		margin-bottom: 0.5rem;
 	}
 
-	#data {
-		margin-right: 28rem; 
-	}
-	#local {
-		margin-right: 27.5rem;
-	}
-	#nome {
-		margin-right: 38rem;
-	}
-	
-	#peso {
-		margin-right: 30rem;
-	}
-	
-	#aluguel {
-		margin-right: 28.2rem;
-	}
-	
-	#empresa {
-		margin-right: 25.5rem;
-	}
-	
-	#taxa {
-		margin-right: 22.5rem;
-	}
-
 	input#datainput {
 		width: 15rem;
 		margin-right: 28rem;
@@ -242,14 +224,9 @@ label {
 		padding-top: 22vh;
 	}
 
-		
 	input#enviar {
-		margin-left: 28rem;
-		margin-top: -4rem;
-		width: 15rem;
-		height: 4rem;
-		
-		font-size: 25px;
+		width: 8rem;
+		height: 2.5rem;
 	}
 
 	/* .rodape {
@@ -257,35 +234,45 @@ label {
 	} */
 
 	h1 {
-	font-size: 20px;
+	font-size: 35px;
 	margin-bottom: 1rem;
 	}
 
+.opc, #equipes {
+
+	width: 15rem;
+	height: 3rem;
+	border-radius: 9px;
+	padding: 2px;
+	outline: none;
+	border: 0.1px solid #aaa;
+	color: #e2e2e2;
+	background-color: transparent;
+}
+
+.modalidade {
+	height: 2.5rem;
+}
+
 
 }
-#integrante6{
-    align-items: center;
-    justify-content: center;
-    top: 59vh;
-    left: 42vw;
-    position: absolute;
-	margin-top: 3vh;
-}
-#integrante7{
-	align-items: center;
-	justify-content: center;
-	top: 59vh;
-	left: 42vw;
-	position: absolute;}
-.Senha{
-	align-items: center;
-	justify-content: center;
-	top: 64vh;
-	left: 42vw;
-	position: absolute;}
+
 .hidden{
 	display: none;
 }
 .Membro1{
-	margin-left: 5vw;
+	margin-left: 4vw;
 }
+
+.opc, #equipes {
+
+	width: 15rem;
+	height: 2.5rem;
+	border-radius: 9px;
+	padding: 2px;
+	outline: none;
+	border: 0.1px solid #aaa;
+	color: #e2e2e2;
+	background-color: transparent;
+}
+
