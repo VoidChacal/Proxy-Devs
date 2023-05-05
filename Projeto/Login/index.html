@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Cadastro de times | Proxy Devs</title>
+	<link rel="icon" type="image/jpg" href="img/cabeca.png"/>
+
+	
+
+
+	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<script src="script.js"></script>
+
+	
+<nav id="nav-menu">
+
+
+	<nav id="nav-menu">
+
+	  <div class="menu">
+		<ul>
+		  <a style="text-decoration: none;" href="../Home/index.html"><li class="ancoras" >Home</li></a>
+		  <a style="text-decoration: none;" href="../Calendário/index.html"><li class="ancoras">Calendário</li></a>
+		  <a style="text-decoration: none; "href="../Regras/index.html"><li class="ancoras">Regras</li></a>
+		  <a style="text-decoration: none;" href="../Duvidas/index.html"><li class="ancoras">Dúvidas</li></a>
+		  <a style="text-decoration: none;"><li class="ancoras mt-2" style="border-bottom: 0.2px solid #A49F9F;">Login</li></a>
+		</ul>
+		<img src="img/cabeca.png" alt="" id="logo" class="mt-2">
+
+
+	<!-- <button class="hamburger">
+	  <i class="menuIcon material-icons">menu</i>
+	  <i class="closeIcon material-icons">close</i>
+	</button> -->
+
+		</div>
+	  </nav>		
+
+
+<div class="escolha">
+	<h1>Cadastre seu Grupo</h1>
+	
+	 <select class="opc" name="modalidade" id="modalidade" onchange="showInput(this)">
+            <option class="opc" value="" disabled selected>Modalidade</option>
+            <option class="opc" value="Futsal"  >Futsal</option>
+            <option class="opc" value="Basquete">Basquete</option>
+            <option class="opc" value="">Tênis de Mesa</option>
+            <option class="opc" value="Volei">Voleibol</option>
+            <option class="opc" value="">Handball</option>
+        </select>
+</div>
+
+	<div class="painel">
+		<div id="drop1" class="hidden">
+			<div class="parte1">
+		 <label id="nome-lider">Nome do Líder do Grupo</label>
+		<input class="campo" type="text" name="lider">
+		
+
+		<label id="integrante1" >Nome do Integrante</label>
+		<input class="campo" type="text" name="integrante1">
+
+		<label id="integrante2" >Nome do Integrante</label>
+		<input class="campo" type="text" name="integrante2">
+		
+
+		<label id="integrante3">Nome do Integrante</label>
+		<input class="campo" type="text" name="integrante3">
+			
+
+		<label id="integrante4">Nome do Integrante</label>
+		<input class="campo" type="text" name="integrante4">
+		
+		<div class="hidden" id="integrante6" style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
+			<label id="integrante4">Nome do Integrante</label>
+		<input class="campo" type="text" name="integrante7">
+		</div>
+		
+		<div class="hidden" id="integrante7">
+			<label id="integrante4" style="justify-content: center;">Nome do Integrante</label>
+		<input class="campo" type="text" name="integrante7">
+		</div>
+		<label id="Senha">Senha</label>
+		<input class="Senha" type="password" name="Senha">
+	</div>
+
+	
+	</div>
+		
+		<div class="baixo">
+		
+       	<select class="equipe" name="Equipes" id="equipes">
+            <option class="equipe" value="" disabled selected>Numero da sua Equipe</option>
+            <option class="equipe" value="">Equipe 1</option>
+            <option class="equipe" value="">Equipe 2</option>
+            <option class="equipe" value="">Equipe 3</option>
+            <option class="equipe" value="">Equipe 4</option>
+            <option class="equipe" value="">Equipe 5</option>
+            <option class="equipe" value="">Equipe 6</option>
+            <option class="equipe" value="">Equipe 7</option>
+            <option class="equipe" value="">Equipe 8</option>
+			
+			<input type="submit" class="campo" id="enviar"> 
+		</div>
+
+        </select>
+	</div>
+
+
+
+
+</body>
+</html>

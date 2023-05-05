@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* roxo pastel: #8763C8 */
+/* cinza escuro: #868080 */
+/* cinza claro: #A49F9F */
+/* roxo antilogo: #7143c5 */
+
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+body {
+  height: 166vh;
+}
+
+.menu {
+width: 100%;
+height: 6vh;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+}
+
+#nav-menu {
+  height: 6vh;
+  width: 100%;
+  background-color:#23232e;
+}
+
+ul {
+  width: 70%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+}
+ul li {
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+.menu #nav-menu ul li {
+  list-style: none;
+  transition: all 0.7s ease;
+  cursor: pointer;
+}
+
+ul li:hover {
+  border-bottom: 1px solid #A49F9F;
+}
+
+#logo {
+  width: 4rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+
+ul li:hover {
+    border-bottom: 0.2px solid #7143c5;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 150vh;
+}
+
+.img {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  padding:5rem 0rem 5rem 0rem;
+
+} 
+
+.img img {
+  border: 2px solid #7143c5;
+  border-radius: 9px;
+}
+
+#esportes, #esportes1 {
+  width: 300px;
+  height: auto;
+  animation: fade-in 0.9s ease-in;
+}
+
+@keyframes fade-in {
+  0%{
+    opacity: 0;
+  }
+
+  50%{
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.mid-text {
+  padding: 5rem 0rem 5rem 0rem;
+  height: 150vh;
+  width: 100%;
+}
+
+.text-p {
+  font-size: 1.2rem;
+}
+
+#ask1,
+#ask2,
+#ask3,
+#ask4,
+#ask5 {
+  margin-bottom: 2rem;
+}
+
+
+.footer {
+  height: 10vh;
+  text-align: center;
+  background-color:#23232e;
+  color: #fff;
+}
+
+
+@media (max-width: 1000px) {
+
+  .container {
+    height: fit-content;
+  }
+
+  #esportes, #esportes1 {
+    display: none;
+  }
+
+  .mid-text {
+    height: 150vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+  }
+
+  h1.title {
+    font-size: 2.5rem;
+  }
+
+  .text-p {
+    font-size: 1rem;
+  }
+
+
+}
+
+@media (max-width: 600px)
+{
+  h1.title {
+    font-size: 1.5rem;
+  }
+
+  .text-p {
+    font-size: 1rem;
+  }
+}
