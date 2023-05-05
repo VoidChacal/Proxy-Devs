@@ -1,37 +1,42 @@
 *{
-    margin: 0px;
-    padding: 0px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+/*web-kit*/
+  input[type=file]{
+    display: none;
   }
-  /*web-kit*/
-    input[type=file]{
-      display: none;
-    }
-    ::-webkit-inner-spin-button{
+  ::-webkit-inner-spin-button{
 
-      -webkit-appearance: none;
-    }
-    ::-webkit-scrollbar{
+    -webkit-appearance: none;
+  }
+  ::-webkit-scrollbar{
 
-      width: 8px;
-    }
+    width: 8px;
+  }
 
-    ::-webkit-scrollbar-thumb{
-      background: rgb(0 0 0 /50%);
-      border-radius: 3px;
-    }
-    .ocultar{
-      display: none;
-    }
-    button:focus, button:focus-visible, input:focus-visible, input:focus, select:focus-visible, select:focus, textarea:focus-visible, textarea:focus{
-      outline: none;
-    }
+  ::-webkit-scrollbar-thumb{
+    background: rgb(0 0 0 /50%);
+    border-radius: 3px;
+  }
+  .ocultar{
+    display: none;
+  }
+  button:focus, button:focus-visible, input:focus-visible, input:focus, select:focus-visible, select:focus, textarea:focus-visible, textarea:focus{
+    outline: none;
+  }
 body{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  overflow-y: overlay;
-  background-color: white;
- 
+display: flex;
+flex-direction: column;
+align-items: center;
+overflow-y: overlay;
+background-color: white;
+background-image: url(img/552032.jpg);
+background-repeat: no-repeat;
+background-size: 100%;
 }
 
 
